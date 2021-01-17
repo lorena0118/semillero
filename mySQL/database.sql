@@ -1,18 +1,19 @@
 use retosql;
 
-DROP TABLE IF EXISTS  tipo_marca;
-DROP TABLE IF EXISTS  tipo_linea;
 DROP TABLE IF EXISTS vehiculo;
+DROP TABLE IF EXISTS  tipo_linea;
+DROP TABLE IF EXISTS  tipo_marca;
+
 
 CREATE TABLE tipo_marca(
     id_marca INT(5) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
-    `desc-marca` VARCHAR(255),
+    descripcion_marca VARCHAR(255),
     activo  ENUM('S', 'N')
 );
 
 CREATE TABLE tipo_linea(
     id_linea INT(5) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
-    `desc-linea` VARCHAR(255),
+    descripcion_linea VARCHAR(255),
     activo  ENUM('S', 'N'),
     id_marca INT(5) UNSIGNED,
     FOREIGN KEY (id_marca) REFERENCES tipo_marca(id_marca)
@@ -27,5 +28,5 @@ CREATE TABLE vehiculo(
     fecha_ven_contratodo DATE,
     FOREIGN KEY (id_linea) REFERENCES tipo_linea(id_linea)
 );
-
+  
 
