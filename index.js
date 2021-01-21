@@ -1,11 +1,11 @@
 const express = require('express')
 const morgan = require('morgan')
-
+ 
 const tipo_marca= require('./routes/tipo_marca')
 const tipo_linea=require('./routes/tipo_linea')
 const vehiculo =require('./routes/vehiculo')
-
-const app = express();
+ 
+const app = express(); 
 require('dotenv').config()
 
 app.use(morgan('dev'))
