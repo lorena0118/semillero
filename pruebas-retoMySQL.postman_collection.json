@@ -1,0 +1,449 @@
+{
+	"info": {
+		"_postman_id": "40bbe7a5-5635-4011-b991-56758f3aa19d",
+		"name": "pruebas-retoMySQL",
+		"description": "Set de servicios para el curso de backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post vehiculo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nro_placa\": 1118,\r\n    \"id_linea\": 7,\r\n    \"modelo\": \"1\",\r\n    \"fecha_ven_seguro\": \"2016/04/11\",\r\n    \"fecha_ven_tecnomecanica\": \"2017/07/10\",\r\n    \"fecha_ven_contratodo\": \"2018/07/05\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5001/api/vehiculo",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"vehiculo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cantidad marca",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nro_placa\": 1101,\r\n    \"id_linea\": 2,\r\n    \"modelo\": \"modelo2\",\r\n    \"fecha_ven_seguro\": \"2021/10/11\",\r\n    \"fecha_ven_tecnomecanica\": \"2021/12/22\",\r\n    \"fecha_ven_contratodo\": \"2021/01/15\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5001/api/cantidadMarca",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"cantidadMarca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post marca",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descripcion_marca\": \"Descripcion de la marca 5\",\r\n    \"activo\": \"N\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5001/api/marca",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"marca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post linea",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descripcion_linea\": \"descripción línea 20\",\r\n    \"id_marca\": 5,\r\n    \"activo\": \"N\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5001/api/linea",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"linea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cantidad linea",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/api/lineaCantidad",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"lineaCantidad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cantidad vehiculo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/api/vehiculoCantidad",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"vehiculoCantidad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vehiculo rango-fecha",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fecha_inicio\": \"2020/01/01\",\r\n    \"fecha_fin\": \"2024/01/01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5001/api/vehiculoRangoFecha",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"vehiculoRangoFecha"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modelo maximo y minimo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/api/modeloMaxMin",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"modeloMaxMin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vehiculos por rango modelo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"modelo_minimo\": 1,\r\n    \"modelo_maximo\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5001/api/VehiculoModelo",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"VehiculoModelo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar estado tipo_marca",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activo\": \"N\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5001/api/modificarEstadoMarca/:id_marca",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"modificarEstadoMarca",
+						":id_marca"
+					],
+					"variable": [
+						{
+							"key": "id_marca",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar marca",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/api/eliminarMarca/:id_marca",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"eliminarMarca",
+						":id_marca"
+					],
+					"variable": [
+						{
+							"key": "id_marca",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consulta unica",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/api/consultaUnica",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"consultaUnica"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "suma modelos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/api/sumaModelos",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"sumaModelos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cantidad de activos - inactivos tipo_linea",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/api/cantidadActivos-Inactivos",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"cantidadActivos-Inactivos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Union tablas - Inner Join",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/api/UnionTablas-InnerJoin",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"UnionTablas-InnerJoin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "not null cambio formato fecha - vehículo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/api/notNull-cambioFecha",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"notNull-cambioFecha"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "not null Activo-Inactivo tipo_linea",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/api/notNull",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"notNull"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "not null Activo-Inactivo tipo_marca",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/api/notNull-marca",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"notNull-marca"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
