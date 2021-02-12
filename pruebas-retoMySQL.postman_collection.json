@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nro_placa\": 1118,\r\n    \"id_linea\": 7,\r\n    \"modelo\": \"1\",\r\n    \"fecha_ven_seguro\": \"2016/04/11\",\r\n    \"fecha_ven_tecnomecanica\": \"2017/07/10\",\r\n    \"fecha_ven_contratodo\": \"2018/07/05\"\r\n}",
+					"raw": "{\r\n    \"nro_placa\": 1548,\r\n    \"id_linea\": 7,\r\n    \"modelo\": \"3\",\r\n    \"fecha_ven_seguro\": \"2016/04/11\",\r\n    \"fecha_ven_tecnomecanica\": \"2017/07/10\",\r\n    \"fecha_ven_contratodo\": \"2018/07/05\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,11 +21,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:5001/api/vehiculo",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/vehiculo",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"vehiculo"
@@ -52,11 +54,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:5001/api/cantidadMarca",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/cantidadMarca",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"cantidadMarca"
@@ -80,11 +84,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:5001/api/marca",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/marca",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"marca"
@@ -108,12 +114,16 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:5001/api/linea",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/vehiculoCantidad/api/linea",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
+						"api",
+						"vehiculoCantidad",
 						"api",
 						"linea"
 					]
@@ -127,12 +137,16 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5001/api/lineaCantidad",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/vehiculoCantidad/api/lineaCantidad",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
+						"api",
+						"vehiculoCantidad",
 						"api",
 						"lineaCantidad"
 					]
@@ -146,11 +160,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5001/api/vehiculoCantidad",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/vehiculoCantidad",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"vehiculoCantidad"
@@ -188,11 +204,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:5001/api/vehiculoRangoFecha",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/vehiculoRangoFecha",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"vehiculoRangoFecha"
@@ -207,11 +225,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5001/api/modeloMaxMin",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/modeloMaxMin",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"modeloMaxMin"
@@ -238,11 +258,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:5001/api/VehiculoModelo",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/VehiculoModelo",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"VehiculoModelo"
@@ -266,11 +288,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:5001/api/modificarEstadoMarca/:id_marca",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/modificarEstadoMarca/:id_marca",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"modificarEstadoMarca",
@@ -292,11 +316,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:5001/api/eliminarMarca/:id_marca",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/eliminarMarca/:id_marca",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"eliminarMarca",
@@ -318,11 +344,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5001/api/consultaUnica",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/consultaUnica",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"consultaUnica"
@@ -337,11 +365,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5001/api/sumaModelos",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/sumaModelos",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"sumaModelos"
@@ -356,11 +386,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5001/api/cantidadActivos-Inactivos",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/cantidadActivos-Inactivos",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"cantidadActivos-Inactivos"
@@ -375,11 +407,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5001/api/UnionTablas-InnerJoin",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/UnionTablas-InnerJoin",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"UnionTablas-InnerJoin"
@@ -394,11 +428,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5001/api/notNull-cambioFecha",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/notNull-cambioFecha",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"notNull-cambioFecha"
@@ -413,11 +449,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5001/api/notNull",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/notNull",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"notNull"
@@ -432,11 +470,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5001/api/notNull-marca",
+					"raw": "https://reto-semillero-2.herokuapp.com/api/notNull-marca",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"reto-semillero-2",
+						"herokuapp",
+						"com"
 					],
-					"port": "5001",
 					"path": [
 						"api",
 						"notNull-marca"
