@@ -70,9 +70,9 @@ router.get("/modeloMaxMin", (req, res) => {
   });
 
 
-//Obtener registros por rango de modelos
+//Crear una consulta de vehículos que me permita consultar todos los vehículos por un rango de modelos por el campo modelo
 
-router.get('/VehiculoModelo',(req,res)=>{
+router.get('/VehiculosRangoModelo',(req,res)=>{
     const{ modelo_minimo, modelo_maximo }= req.body
     conection_mysql.query(`SELECT * FROM vehiculo WHERE modelo BETWEEN ? AND ?`, [modelo_minimo,modelo_maximo],
     (err,result,fields)=>{
